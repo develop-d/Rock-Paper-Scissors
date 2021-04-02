@@ -108,7 +108,7 @@ namespace RockPapeScissors
                 // Report Winner
                 Console.WriteLine(g.GetLastGameWinner() != null ? $"Winner: {g.GetLastGameWinner().Name}" : "No winner, TIE");
                 // Report Game Score
-                Console.WriteLine($"Score P1:P2: {g.GetPlayerScore(P1Name)}:{g.GetPlayerScore(P2Name)}");
+                Console.WriteLine($"Score {P1Name}:{P2Name}: {g.GetPlayerScore(P1Name)}:{g.GetPlayerScore(P2Name)}");
 
                 Console.WriteLine();
                 counter--;
