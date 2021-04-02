@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\libs\RockPaperScissorsLibrary\RockPaperScissorsLibrary.csproj" />
+    <ProjectReference Include="..\RockPaperScissorsLibrary\RockPaperScissorsLibrary.csproj" />
   </ItemGroup>
 
 </Project>
