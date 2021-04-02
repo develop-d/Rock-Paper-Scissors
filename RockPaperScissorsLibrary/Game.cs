@@ -95,7 +95,7 @@ namespace RockPaperScissorsLibrary
         }
 
         /// <summary>
-        /// Print to the console Player name who win the last round or TIE if there is no winner.
+        /// Print to the console Player name who win the last round or TIE if there is no winner
         /// </summary>
         public void ReportWinner()
         {
