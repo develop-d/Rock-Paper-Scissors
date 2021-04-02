@@ -99,6 +99,7 @@ namespace RockPaperScissorsLibrary
         /// </summary>
         public void ReportWinner()
         {
+            Console.ForegroundColor = ConsoleColor.Green;
             if (lastRoundWinner == null)
             {
                 Console.WriteLine($"No winner: TIE ");
@@ -107,6 +108,13 @@ namespace RockPaperScissorsLibrary
             {
                 Console.WriteLine($"Winner name: {lastRoundWinner.Name} ");
             }
+            Console.ResetColor();
+        }
+
+
+        public void ReportPlayerMove(string name)
+        {
+            Console.WriteLine($"Player {name} move was \"{GetPlayerByName(name).GetCurrentHandSign()}\" hand sign");
         }
 
         /// <summary>

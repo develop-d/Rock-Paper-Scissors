@@ -11,7 +11,7 @@ namespace RockPaperScissorsLibrary
         /// <returns>Internal representation of hand sign</returns>
         public static HandSign ProcessUserInput(string playerName)
         {            
-            Console.Write($"{playerName} enter any word starting R/S/P for Rock/Paper/Scissors. Your move: ");
+            Console.Write($"{playerName}, your move: ");
             var vInput = Helpers.CheckValidGameInput(Console.ReadLine());
             while (vInput == HandSign.NotDefined)
             {
