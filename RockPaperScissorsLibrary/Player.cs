@@ -9,9 +9,9 @@ namespace RockPaperScissorsLibrary
     {
 
         public string Name { get; set; }
-        public int Score { get; set; }
+        public int Score { get; set; } = 0;
 
-        private HandSign handSign;
+        private HandSign handSign = HandSign.NotDefined;
 
         private HandSign CurrentHand
         {
@@ -25,9 +25,7 @@ namespace RockPaperScissorsLibrary
         /// <param name="name">Name of the player</param>
         public Player(string name)
         {
-            Name = name;
-            Score = 0;
-            CurrentHand = HandSign.NotDefined;
+            Name = name;            
         }
 
         /// <summary>
