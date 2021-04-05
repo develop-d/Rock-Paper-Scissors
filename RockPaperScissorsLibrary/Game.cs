@@ -111,7 +111,10 @@ namespace RockPaperScissorsLibrary
             Console.ResetColor();
         }
 
-
+        /// <summary>
+        /// Print to the console Player last player move
+        /// </summary>
+        /// <param name="name">Name of the player</param>
         public void ReportPlayerMove(string name)
         {
             Console.WriteLine($"Player {name} move was \"{GetPlayerByName(name).GetCurrentHandSign()}\" hand sign");
